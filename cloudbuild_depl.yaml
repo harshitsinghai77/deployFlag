@@ -1,0 +1,7 @@
+timeout: 30m0s
+
+steps:
+  - name: "gcr.io/kaniko-project/executor:v1.3.0"
+    args:
+      - --destination=us.gcr.io/production/deployflag:$TAG_NAME
+      - --dockerfile=Dockerfile

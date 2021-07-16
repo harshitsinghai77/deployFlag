@@ -1,0 +1,10 @@
+__pycache__
+.github/
+dev/
+tests/
+.deepsource.toml
+.env.*
+.git.*
+*.cfg
+*.yaml
+*.md

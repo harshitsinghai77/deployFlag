@@ -1,0 +1,21 @@
+version: "3"
+services:
+  postgresql:
+    image: "postgres:13"
+    environment:
+      POSTGRES_DB: "deployflag"
+      POSTGRES_USER: "deployflag"
+      POSTGRES_PASSWORD: "password"
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: "redis:4-alpine3.8"
+    ports:
+      - "6379:6379"
+
+  rabbitmq:
+    image: "rabbitmq:3.7.8-management-alpine"
+    ports:
+      - "5672:5672"
+      - "15672:15672"

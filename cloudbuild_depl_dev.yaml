@@ -1,0 +1,9 @@
+timeout: 30m0s
+
+steps:
+  - name: "gcr.io/kaniko-project/executor:v1.3.0"
+    args:
+      - --destination=us.gcr.io/dev/deployflag:$BRANCH_NAME
+      - --dockerfile=Dockerfile
+      - --cache-ttl=500h
+      - --cache=true
