@@ -93,11 +93,7 @@ cursor.execute("SELECT * from model_performance_metadata;").fetchall()
 
 ```
 
-Note: This is just for debugging. This is not being used in code.
-
-## GitHub Actions
-
-Github Actions will be triggered on every pull request. Edit the `.github/workflows/ci.yml` if required.
+Note: This is just for debugging. Should not be used in production.
 
 ## Google Cloud Build
 
