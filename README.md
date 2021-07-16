@@ -2,7 +2,7 @@
 
 # deployFlag
 
-deployFlag is boilercode for training machine learning algorithms using Celery's distributed task queue.
+deployFlag is boilercode for training machine learning algorithms across threads or machines using Celery's distributed task queue.
 
 ## Steps to initialize deployFlag
 
